@@ -83,12 +83,9 @@ header {
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
 }
+.nav__link--active,
 .nav-link:hover {
   color: #00bde2;
-}
-.nav__link--active {
-  color: #00bde2;
-  border-bottom: 1px solid #00bde2;
 }
 
 /*Main*/
@@ -112,13 +109,7 @@ header {
   margin-right: 15px;
   display: inline-block;
 }
-.redesSociales__icon {
-  color: #ffffff;
-  font-size: 20px;
-}
-.redesSociales__icon:hover {
-  color: #00bde2;
-}
+
 .seccion__imagen img {
   width: 75%;
   border-radius: 50%;
@@ -160,6 +151,9 @@ header {
   margin-bottom: 10px;
   padding: 4px 0px;
   display: inline-block;
+}
+.skills__item {
+  transition: all 0.3s linear;
 }
 .skills__item span {
   border: 1px solid #00bde2;
@@ -310,10 +304,14 @@ textarea::placeholder {
 /*Footer*/
 footer {
   font-size: 15px;
-  text-align: center;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.footer__contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer__titulo {
   font-size: 0.95em;
@@ -329,6 +327,46 @@ footer {
 .redesSociales__icon {
   margin-right: 25px;
 }
+/*Animaciones*/
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00bde2;
+  transition: width 0.3s;
+  border: none;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.redesSociales__icon i:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.redesSociales__icon i {
+  color: #ffffff;
+  border-radius: 50%;
+  border-width: 1px;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  border-color: #ffffff;
+  border-style: solid;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.redesSociales__icon i:hover,
+.skills__item:hover {
+  background-color: #00bde2;
+  border-color: #00bde2;
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
 /*MediaQuerys*/
 
 @media screen and (max-width: 992px) {
@@ -356,19 +394,23 @@ footer {
 
   /*Footer*/
   .footer__contenido {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
     padding-left: 0;
   }
   .footer__item {
-    display: block;
-    margin-top: 15px;
     margin-left: 0;
-    text-align: center;
+    margin-top: 15px;
   }
 }
 /*Ipad*/
 @media screen and (max-width: 768px) {
   h1 {
     text-align: center;
+  }
+  .nav-item:hover::after {
+    width: 40%;
   }
 
   .seccion__imagen {
