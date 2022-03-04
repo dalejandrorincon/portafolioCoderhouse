@@ -1,0 +1,61 @@
+@import "typography";
+* {
+    margin: 0;
+    padding: 0;
+}
+// Headings
+// -----------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+    font-family: $RobotoSlab;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 32px;
+    font-family: $RobotoSlab;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+// Text
+// -----------------------------------------------------------------------------
+// Links & Buttons
+// -----------------------------------------------------------------------------
+.btn {
+    margin-top: 20px;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    display: block;
+    color: $white;
+    border: 1px solid #eaeaea;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    width: max-content;
+    &:hover {
+        border: 1px solid $primary-color !important;
+        color: $white;
+    }
+}
+// Lists
+// -----------------------------------------------------------------------------
+// Other
+// -----------------------------------------------------------------------------
+body {
+    background-color: $secondary-color;
+    font-family: $Montserrat;
+    color: $white;
+}
+::selection {
+    background-color: $primary-color;
+}

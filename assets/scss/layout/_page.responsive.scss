@@ -1,0 +1,91 @@
+/*MediaQuerys*/
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 45px;
+    }
+    #introduccion__info {
+        text-align: center;
+        margin-top: 25px;
+    }
+    .seccion__imagen {
+        text-align: center;
+    }
+    /*Skills*/
+    .item--skill {
+        flex: 100%;
+        text-align: center;
+    }
+    .item--rating {
+        flex: 100%;
+        ul {
+            padding: 0;
+        }
+    }
+    /*Footer*/
+    .footer__contenido {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0;
+    }
+    .footer__item {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+/*Ipad*/
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+    .nav-item:hover::after {
+        width: 40%;
+    }
+    .seccion__imagen {
+        display: none;
+    }
+    /*About*/
+    #about__intro {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .about__cvDownload .btn {
+        width: 50%;
+    }
+    /*Skills*/
+    #tecnicalSkills h2,
+    #profesionalSkills h2 {
+        margin-bottom: 15px;
+    }
+    /*Portafolio*/
+    #myTab {
+        width: 80%;
+    }
+    .grid__galeria--single,
+    .grid__galeria--doubleWidth,
+    .grid__galeria--doubleHeight {
+        grid-column: span 3;
+    }
+    .grid__galeria--doubleHeight {
+        grid-row: span 1;
+    }
+}
+/*Celular*/
+@media screen and (max-width: 576px) {
+    .seccion__imagen {
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+    /*About*/
+    .skills__item {
+        display: inline-flex;
+    }
+    /*Skills*/
+    .tecnicalSkills__info {
+        text-align: center;
+        flex-direction: column;
+    }
+}
