@@ -36,7 +36,7 @@ h3 {
     display: block;
     color: $white;
     border: 1px solid #eaeaea;
-    font-size: 12px;
+    font-size: map-get($font-sizes,"small");
     letter-spacing: 1px;
     font-weight: 400;
     text-decoration: none;
@@ -47,6 +47,7 @@ h3 {
         color: $white;
     }
 }
+
 // Lists
 // -----------------------------------------------------------------------------
 // Other

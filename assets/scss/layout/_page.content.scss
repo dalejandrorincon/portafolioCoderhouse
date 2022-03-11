@@ -24,7 +24,7 @@
   
   .seccion__imagen {
     img{
-      width: 75%;
+      @include imagen (75%, auto);
       border-radius: 50%;
       border: 15px solid rgba(0, 189, 226, 0.6);
     }
@@ -38,7 +38,7 @@
     border-radius: 4px;
   }
   .card__title {
-    font-size: 24px;
+    font-size: map-get($font-sizes, "large");
   }
   .card__description {
     opacity: 0.7;
@@ -180,8 +180,7 @@
     column-gap: 10px;
   }
   .grid__galeria img {
-    width: 100%;
-    height: 100%;
+    @include imagen (100%,100%);
     object-fit: cover;
   }
   .grid__galeria--doubleHeight {
@@ -202,9 +201,7 @@
     border: 1px solid $white;
     padding-left: 10px;
   }
-  #contacto input.btn {
-    padding: 8px 25px;
-  }
+  
   #contacto input,
   #contacto textarea,
   #contacto input::placeholder,
@@ -224,9 +221,15 @@
     margin: auto;
     text-align: center;
   }
-  .form--btn .btn {
-    background: transparent;
-  }
+
+  #contacto .btn-submit {
+    @extend .btn;
+    background: $white;
+    color: $azul-oscuro;
+      &:hover{
+        background-color: $azul-claro;
+      }
+}
   
   
   /*Animaciones*/
@@ -248,7 +251,7 @@
       color: #ffffff;
       border-radius: 50%;
       border-width: 1px;
-      font-size: 16px;
+      font-size: map-get($font-sizes, "normal" );
       width: 30px;
       height: 30px;
       border-color: #ffffff;

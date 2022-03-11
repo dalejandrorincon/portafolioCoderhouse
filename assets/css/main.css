@@ -23,7 +23,7 @@ h3 {
   font-weight: 700;
   text-align: center; }
 
-.btn {
+.btn, #contacto .btn-submit {
   margin-top: 20px;
   padding: 8px 25px;
   text-transform: uppercase;
@@ -36,7 +36,7 @@ h3 {
   text-decoration: none;
   text-align: center;
   width: max-content; }
-  .btn:hover {
+  .btn:hover, #contacto .btn-submit:hover {
     border: 1px solid #00bde2 !important;
     color: #fff; }
 
@@ -101,6 +101,7 @@ header {
 
 .seccion__imagen img {
   width: 75%;
+  height: auto;
   border-radius: 50%;
   border: 15px solid rgba(0, 189, 226, 0.6); }
 
@@ -156,7 +157,7 @@ header {
   margin: 20px auto;
   text-align: center; }
 
-.about__cvDownload .btn {
+.about__cvDownload .btn, .about__cvDownload #contacto .btn-submit, #contacto .about__cvDownload .btn-submit {
   width: 30%;
   margin: auto; }
 
@@ -258,9 +259,6 @@ header {
   border: 1px solid #fff;
   padding-left: 10px; }
 
-#contacto input.btn {
-  padding: 8px 25px; }
-
 #contacto input,
 #contacto textarea,
 #contacto input::placeholder,
@@ -280,8 +278,11 @@ textarea::placeholder {
   margin: auto;
   text-align: center; }
 
-.form--btn .btn {
-  background: transparent; }
+#contacto .btn-submit {
+  background: #fff;
+  color: #110e18; }
+  #contacto .btn-submit:hover {
+    background-color: #00bde2; }
 
 /*Animaciones*/
 .nav-item::after {
@@ -390,7 +391,7 @@ footer {
     width: 90%;
     margin: auto;
     text-align: center; }
-  .about__cvDownload .btn {
+  .about__cvDownload .btn, .about__cvDownload #contacto .btn-submit, #contacto .about__cvDownload .btn-submit {
     width: 50%; }
   /*Skills*/
   #tecnicalSkills h2,

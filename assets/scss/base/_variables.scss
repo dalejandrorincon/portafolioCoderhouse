@@ -20,3 +20,10 @@ $bg-color:      $secondary-color;
 $header-bg: #202026;
 $btn-color:     $white;
 $card-bg: #1e1d25;
+
+//mapa definido para el tamaño de las fuentes
+$font-sizes:(
+    "small" : 12px,
+    "normal" : 16px,
+    "large" : 24px
+);
