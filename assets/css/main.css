@@ -152,6 +152,28 @@ header {
 #about__experience h2 {
   text-align: center; }
 
+#about__experience .card {
+  width: 70%;
+  margin: auto;
+  min-height: 165px; }
+  #about__experience .card h3 {
+    text-align: left;
+    font-size: 1.1em;
+    text-transform: initial; }
+  #about__experience .card .eduYear {
+    margin: 10px 0;
+    font-weight: 100;
+    font-style: italic;
+    font-size: .85em;
+    color: #00bde2; }
+  #about__experience .card span {
+    font-size: .9em;
+    color: #00bde2; }
+  #about__experience .card p {
+    font-size: .9em;
+    font-weight: 300;
+    color: #fff; }
+
 .about__cvDownload {
   width: 90%;
   margin: 20px auto;
